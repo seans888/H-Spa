@@ -32,12 +32,12 @@ ENGINE = InnoDB;
 
 
 
-CREATE TABLE IF NOT EXISTS `spareservation`.`service_booking` (
+CREATE TABLE IF NOT EXISTS `spareservation`.`reservation` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `customer_id` INT NOT NULL,
   PRIMARY KEY (`id`, `customer_id`),
-  INDEX `fk_service_booking_customer_idx` (`customer_id` ASC),
-  CONSTRAINT `fk_service_booking_customer`
+  INDEX `fk_reservation_customer_idx` (`customer_id` ASC),
+  CONSTRAINT `fk_reservation_customer`
     FOREIGN KEY (`customer_id`)
     REFERENCES `spareservation`.`customer` (`id`)
     ON DELETE NO ACTION
@@ -56,39 +56,40 @@ ENGINE = InnoDB;
 
 
 
-CREATE TABLE IF NOT EXISTS `spareservation`.`service_details` (
+CREATE TABLE IF NOT EXISTS `spareservation`.`reservation_details` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `employee_id` INT NOT NULL,
   `services_ID` INT NOT NULL,
   `rooms_id` INT NOT NULL,
   `date` DATE NOT NULL,
+  `duration` TIME NOT NULL,
   `time_started` TIME(0) NOT NULL,
   `time_ended` TIME(0),
   `booking_type` VARCHAR(45) NOT NULL,
-  `service_booking_id` INT NOT NULL,
-  PRIMARY KEY (`id`, `employee_id`, `services_ID`, `rooms_id`, `service_booking_id`),
-  INDEX `fk_service_details_employee1_idx` (`employee_id` ASC),
-  INDEX `fk_service_details_services1_idx` (`services_ID` ASC),
-  INDEX `fk_service_details_rooms1_idx` (`rooms_id` ASC),
-  INDEX `fk_service_details_service_booking1_idx` (`service_booking_id` ASC),
-  CONSTRAINT `fk_service_details_employee1`
+  `reservation_id` INT NOT NULL,
+  PRIMARY KEY (`id`, `employee_id`, `services_ID`, `rooms_id`, `reservation_id`),
+  INDEX `fk_reservation_details_employee1_idx` (`employee_id` ASC),
+  INDEX `fk_reservation_details_services1_idx` (`services_ID` ASC),
+  INDEX `fk_reservation_details_rooms1_idx` (`rooms_id` ASC),
+  INDEX `fk_reservation_details_reservation1_idx` (`reservation_id` ASC),
+  CONSTRAINT `fk_reservation_details_employee1`
     FOREIGN KEY (`employee_id`)
     REFERENCES `spareservation`.`employee` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_service_details_services1`
+  CONSTRAINT `fk_reservation_details_services1`
     FOREIGN KEY (`services_ID`)
     REFERENCES `spareservation`.`services` (`ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_service_details_rooms1`
+  CONSTRAINT `fk_reservation_details_rooms1`
     FOREIGN KEY (`rooms_id`)
     REFERENCES `spareservation`.`rooms` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_service_details_service_booking1`
-    FOREIGN KEY (`service_booking_id`)
-    REFERENCES `spareservation`.`service_booking` (`id`)
+  CONSTRAINT `fk_reservation_details_reservation1`
+    FOREIGN KEY (`reservation_id`)
+    REFERENCES `spareservation`.`reservation` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;

@@ -1,0 +1,3 @@
+XAMPP -> HTDOCS niyo lagay yung wordpress
+
+Spaadmin1 = @dministrati0n

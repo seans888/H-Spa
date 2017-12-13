@@ -1,0 +1,394 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VW Spa Lite\n"
+"POT-Creation-Date: 2016-02-11 19:00+0530\n"
+"PO-Revision-Date: 2016-02-11 19:00+0530\n"
+"Last-Translator: \n"
+"Language-Team: VW Themes <support@vwthemes.net>\n"
+"Language: English\n"
+"MIME-Version: 1.2.4\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: 404.php:14
+msgid "<strong>404</strong> Not Found"
+msgstr ""
+
+#: 404.php:15
+msgid "Looks like you have taken a wrong turn"
+msgstr ""
+
+#: 404.php:16
+#: no-results.php:21
+msgid "Don\'t worry &hellip it happens to the best of us."
+msgstr ""
+
+#: 404.php:18
+#: no-results.php:23
+msgid "Back to Home Page"
+msgstr ""
+
+#. translators: %s: post title
+#: comments.php:30
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:35
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:68
+msgid "'Comments are closed."
+msgstr ""
+
+#: footer.php:29
+msgid "Design & Developed By"
+msgstr ""
+
+#: functions.php:59
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:56
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:78
+msgid "Blog Sidebar"
+msgstr ""
+
+#: functions.php:79
+#: functions.php:89
+#: functions.php:99
+msgid "Appears on blog page sidebar"
+msgstr ""
+
+#: functions.php:88
+msgid "Posts and Pages Sidebar"
+msgstr ""
+
+#: functions.php:98
+msgid "Third Column Sidebar"
+msgstr ""
+
+#: functions.php:108
+msgid "Footer Nav 1"
+msgstr ""
+
+#: functions.php:118
+msgid "Footer Nav 2"
+msgstr ""
+
+#: functions.php:128
+msgid "Footer Nav 3"
+msgstr ""
+
+#: functions.php:138
+msgid "Footer Nav 4"
+msgstr ""
+
+#: functions.php:109
+#: functions.php:119
+#: functions.php:129
+#: functions.php:139
+msgid "Appears on footer"
+msgstr ""
+
+#: header.php:24
+msgid "Menu"
+msgstr ""
+
+#: image.php:35
+#: image.php:69
+#: image.php:104
+#: image.php:139
+#: image.php:177
+#: image.php:217
+#: page.php:24
+#: single.php:34
+#: single.php:90
+#: single.php:147
+#: single.php:204
+#: single.php:262
+#: single.php:320
+msgid "Pages:"
+msgstr ""
+
+#: image.php:40
+#: image.php:74
+#: image.php:109
+#: image.php:144
+#: image.php:182
+#: image.php:222
+msgid "Edit"
+msgstr ""
+
+#: archive.php:44
+#: archive.php:78
+#: archive.php:112
+#: archive.php:148
+#: archive.php:187
+#: archive.php:226
+#: index.php:43
+#: index.php:73
+#: index.php:103
+#: index.php:133
+#: index.php:164
+#: index.php:199
+#: search.php:38
+#: search.php:69
+#: search.php:100
+#: search.php:131
+#: search.php:163
+#: search.php:199
+#: single.php:48
+#: single.php:88
+#: single.php:129
+#: single.php:170
+#: single.php:214
+#: single.php:260
+msgid "Previous page"
+msgstr ""
+
+#: archive.php:45
+#: archive.php:79
+#: archive.php:113
+#: archive.php:149
+#: archive.php:188
+#: archive.php:227
+#: index.php:44
+#: index.php:74
+#: index.php:104
+#: index.php:134
+#: index.php:165
+#: index.php:200
+#: search.php:39
+#: search.php:70
+#: search.php:101
+#: search.php:132
+#: search.php:164
+#: search.php:200
+#: single.php:45
+#: single.php:85
+#: single.php:126
+#: single.php:167
+#: single.php:211
+#: single.php:257
+msgid "Next page"
+msgstr ""
+
+#: archive.php:46	
+#: archive.php:80
+#: archive.php:114
+#: archive.php:150
+#: archive.php:189
+#: archive.php:228
+#: index.php:45
+#: index.php:75
+#: index.php:105
+#: index.php:135
+#: index.php:165
+#: index.php:201
+#: search.php:40
+#: search.php:71
+#: search.php:102
+#: search.php:133
+#: search.php:165
+#: search.php:201
+msgid "page"
+msgstr ""
+
+#: no-results.php:11
+msgid "Nothing Found"
+msgstr ""
+
+#: no-results.php:16
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: no-results.php:18
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: search.php:18
+#: search.php:49
+#: search.php:80
+#: search.php:111
+#: search.php:143
+#: search.php:179
+#, php-format
+msgid "Results For: %s"
+msgstr ""
+
+#: searchform.php:10
+#: searchform.php:12
+msgid "Search"
+msgstr ""
+
+#: sidebar.php:11
+msgid "Archives"
+msgstr ""
+
+#: sidebar.php:17
+msgid "Meta"
+msgstr ""
+
+#: single.php:46
+#: single.php:86
+#: single.php:127
+#: single.php:168
+#: single.php:212
+#: single.php:258
+msgid "Next post:"
+msgstr ""
+
+#: single.php:49
+#: single.php:89
+#: single.php:130
+#: single.php:171
+#: single.php:215
+#: single.php:261
+msgid "Previous post:"
+msgstr ""
+
+#: inc/customizer.php:20
+msgid "VW Settings"
+msgstr ""
+
+#: inc/customizer.php:21
+msgid "Description of what this panel does."
+msgstr ""
+
+#: inc/customizer.php:25
+msgid "General Settings"
+msgstr ""
+
+#: inc/customizer.php:43
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/customizer.php:44
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/customizer.php:45
+msgid "One Column"
+msgstr ""
+
+#: inc/customizer.php:46
+msgid "Three Columns"
+msgstr ""
+
+#: inc/customizer.php:47
+msgid "Four Columns"
+msgstr ""
+
+#: inc/customizer.php:48
+msgid "Grid Layout"
+msgstr ""
+
+#: inc/customizer.php:55
+msgid "Slider Settings"
+msgstr ""
+
+#: inc/customizer.php:69
+msgid "Select Slide Image Page"
+msgstr ""
+
+#: inc/customizer.php:78
+msgid "Contact Info"
+msgstr ""
+
+#: inc/customizer.php:79
+msgid "Contact Info"
+msgstr ""
+
+#: inc/customizer.php:89
+msgid "Contact"
+msgstr ""
+
+#: inc/customizer.php:100
+msgid "Email"
+msgstr ""
+
+#: inc/customizer.php:107
+msgid "Social Icon"
+msgstr ""
+
+#: inc/customizer.php:108
+msgid "social links"
+msgstr ""
+
+#: inc/customizer.php:118
+msgid "Twitter url"
+msgstr ""
+
+#: inc/customizer.php:129
+msgid "Google plus url"
+msgstr ""
+
+#: inc/customizer.php:140
+msgid "Facebook url"
+msgstr ""
+
+#: inc/customizer.php:151
+msgid "Pinterest url"
+msgstr ""
+
+#: inc/customizer.php:162
+msgid "Linkedin url"
+msgstr ""
+
+#: inc/customizer.php:173
+msgid "Instagram url"
+msgstr ""
+
+#: inc/customizer.php:180
+msgid "Amazing Service"
+msgstr ""
+
+#: inc/customizer.php:192
+msgid "Title"
+msgstr ""
+
+#: inc/customizer.php:203
+msgid "Short Content"
+msgstr ""
+
+#: inc/customizer.php:227
+msgid "Select Category to display Latest Post"
+msgstr ""
+
+#: inc/customizer.php:233
+msgid "Copyright"
+msgstr ""
+
+#: inc/customizer.php:245
+msgid "Copyright Text"
+msgstr ""
+
+#: inc/customizer.php:328
+msgid "VW SPA Pro"
+msgstr ""
+
+#: inc/customizer.php:329
+msgid "Go Pro"
+msgstr ""
+
+#: page-template/custom-home-page.php:54
+msgid "Learn More"
+msgstr ""
+
+#: page-template/custom-home-page.php:93
+msgid "Read More"
+msgstr ""

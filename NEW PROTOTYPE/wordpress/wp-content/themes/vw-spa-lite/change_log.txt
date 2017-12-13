@@ -1,0 +1,67 @@
+Version 1.0
+i) Intial version Release
+
+Version 1.1
+i) Corrected POT file
+ii) Corrected slide images
+
+Version 1.1.1
+i) Modified CSS and HTML structure.
+ii) Modified Screenshot.
+
+Version 1.1.2
+i) Changes as per wordpress standards
+	-- Use the_title_attribute()
+	-- Prefix add_panel, add_section, add_setting and add_control handles 
+	-- Remove header("Location: http://" . $_SERVER['HTTP_HOST'] . "");
+	-- Remove unused comment out code ex. searchform.php line 10
+	-- Remove full-width-template tag from style.css or add full width template
+	-- Fixed Necho the_title() in vw_restaurant_the_breadcrumb
+	-- Remove prefix from third party script and styles except Google font
+
+Version 1.1.3
+	-- Incorrect use of home.php
+	-- Multiple escaping issues
+	-- Removed Custom Headers support.
+	-- searchform.php - get_search_query() escaping removed. 
+	-- home.php - added wp_reset_postdata();
+	-- contact.php - you have untranslatable text strings 
+	-- Corected demo content.
+
+Version 1.1.4
+	-- Corrected CSS issues
+	-- Add handle prefix
+
+Version 1.1.5
+	-- Fixed minor issues
+
+Version 1.1.6
+	-- Fixed issues
+	-- REQUIRED: functions.php L163 - Handle bootstrap-style should be bootstrap.
+	-- REQUIRED: functions.php L168, L169 - Handle nivo-slider should be jquery-nivo-slider.
+	-- REQUIRED: functions.php L170 - Handle bootstrap-js should be bootstrap.
+	-- REQUIRED: template-tags.php L40 - Strings should have translatable content
+	-- REQUIRED: index.php - title="<?php _e('READ More...','vw-spa-lite'); ?>" should be title="<?php esc_attr_e('READ More...','vw-spa-lite'); ?>"
+	-- REQUIRED: page.php - wp_link_pages() missing after the_content(). Check in other files also.
+	-- REQUIRED: You are using <?php get_sidebar('page'); ?> but there is no sidebar-page.php file. Can you please check it?
+	-- REQUIRED: vw_spa_lite_jetpack_setup() - Is Jetpack infinite scroll working? Remove it if you dont want to implement.
+	-- REQUIRED: Remove editor-style theme tag.
+	-- REQUIRED: functions.php L63 - Is f1f1f1 correct color for background?
+	-- REQUIRED: antispambot is not secure enough for escaping email. You can use like this. <?php echo esc_html( antispambot( get_theme_mod('vw_spa_lite_cont_email','') ) ); ?>
+	-- REQUIRED: Static front page issue - When Your latest posts is set as Front page displays custom section should not be displayed. Only blog listing is expected in that page. Similar for Posts Page. If you want to implement custom section like slider, you can use Front Page. Please check http://www.chipbennett.net/2013/09/14/home-page-and-front-page-and-templates-oh-my/
+
+Version 1.1.7
+	-- Changed screenshot
+	-- Description changed
+
+Version 1.1.8
+	-- Changed the layout of theme.
+	-- Removed depreceated functions.
+	-- Added the static part from the post.
+
+Version 1.1.9
+	-- Added the translation ready in theme.
+	-- Added rtl language support in theme.
+
+Version 1.2.0
+	-- Added e-commerce in theme.

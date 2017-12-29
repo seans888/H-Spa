@@ -1,4 +1,4 @@
-<?php
+	<?php
 /**
  * The base configuration for WordPress
  *
@@ -16,7 +16,7 @@
  * @link https://codex.wordpress.org/Editing_wp-config.php
  *
  * @package WordPress
- */
+ 
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */

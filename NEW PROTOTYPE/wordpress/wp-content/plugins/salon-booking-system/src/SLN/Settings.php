@@ -107,14 +107,18 @@ class SLN_Settings
 
     public function getThankyouPageId()
     {
-        return $this->get('thankyou');
+        return SLN_Func::get_translated_page_id($this->get('thankyou'));
     }
 
     public function getBookingmyaccountPageId()
     {
-        return $this->get('bookingmyaccount');
+        return SLN_Func::get_translated_page_id($this->get('bookingmyaccount'));
     }
 
+    public function getPayPageId()
+    {
+        return SLN_Func::get_translated_page_id($this->get('pay'));
+    }
 
     public function isDisabled()
     {
@@ -335,5 +339,17 @@ class SLN_Settings
                 ? pll_current_language()
                 : strtolower(substr(get_locale(), 0, 2))
             );
+    }
+
+    public function getDateLocale()
+    {
+        $locale = defined('ICL_LANGUAGE_CODE')
+            ? ICL_LANGUAGE_CODE
+            : (function_exists('pll_current_language')
+                ? pll_current_language()
+                : get_locale()
+            );
+        if( setlocale(LC_TIME,0) !== $locale  ){ setlocale(LC_TIME, $locale ); }
+        return strtolower(substr(get_locale(LC_TIME), 0, 2));
     }
 }
